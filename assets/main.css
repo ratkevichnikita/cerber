@@ -146,6 +146,17 @@ ul, li {
 	height: 25px;
 }
 
+.swiper {
+	position: relative;
+}
+
+.swiper-info {
+	position: absolute;
+	left: 2vw;
+	bottom: 5vw;
+	z-index: 2;
+	color: #fff;
+}
 
 .swiper,
 .swiper-wrapper,
