@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="/assets/main.css">
     <title>Цербер</title>
 </head>
-<body>
+<body class="body-main">
 	<header class="header">
 		<div class="header__inner">
 			<div class="header__top">
@@ -33,25 +33,47 @@
 				</div>
 			</div>
 			<div class="header__bottom">
-				<a href="/">
-
-				</a>
+				<div class="container">
+					<div class="header__bottom-inner">
+						<a href="/" class="header__logo">
+							<img src="./assets/images/icons/icon-logo.webp" alt="cerber logo">
+						</a>
+						<nav class="header__bottom-nav">
+							<ul>
+								<li>
+									<a href="">
+										О компании
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Услуги
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Трудоустройство
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="offer">
 			<div class="swiper">
 				<div class="swiper-info">
 					<div>
-							<h1>ЦЕРБЕР</h1>
-							<p>
-								ГАРАНТИЯ ВАШЕЙ БЕЗОПАСНОСТИ
-							</p>
-						</div>
+						<h1>ЦЕРБЕР</h1>
+						<p>
+							ГАРАНТИЯ ВАШЕЙ БЕЗОПАСНОСТИ
+						</p>
+					</div>
 				</div>
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<img src="./assets/images/homepage/main1.webp" alt="">
-						
 					</div>
 					<div class="swiper-slide">
 						<img src="./assets/images/homepage/main2.webp" alt="">
@@ -59,16 +81,21 @@
 					<div class="swiper-slide">
 						<img src="./assets/images/homepage/main3.webp" alt="">
 					</div>
+					<div class="swiper-slide">
+						<img src="./assets/images/homepage/main4.webp" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="./assets/images/homepage/main5.webp" alt="">
+					</div>
 				</div>
-				<div class="swiper-pagination"></div>
-
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
-
-				<div class="swiper-scrollbar"></div>
 			</div>
 		</div>
 	</header>
+	<section>
+		<div class="wrapper">
+			
+		</div>
+	</section>
 	<footer>
 		<div class="container">
 			<footer></footer>
@@ -82,6 +109,10 @@
 
   const swiper = new Swiper('.swiper', {
 		loop: true,
+		autoplay: {
+        delay: 4000, 
+        disableOnInteraction: false, 
+      },
 		pagination: {
 			el: '.swiper-pagination',
 		},
