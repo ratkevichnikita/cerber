@@ -438,3 +438,173 @@ ul, li {
 	font-weight: 700;
 	margin-bottom: 20px;
 }
+
+.burder {
+	display: none;
+}
+.menu-btn {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      width: 24px;
+      height: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .menu-icon span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: #000;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .menu-btn.active .line1 {
+      transform: rotate(45deg) translate(3px, 3px);
+      transform-origin: 9px center;
+    }
+    .menu-btn.active .line2 {
+      opacity: 0;
+    }
+    .menu-btn.active .line3 {
+      transform: rotate(-45deg) translate(3px, -3px);
+      transform-origin: 7px center;
+    }
+
+@media (max-width: 540px) {
+	h1 {
+		font-size: 55px;
+	}
+	h2 {
+		font-size: 32px;
+	}
+	.header__top-info {
+		font-size: 14px;
+	}
+	.swiper-info {
+		left: 20px;
+		bottom: 50vw;
+	}
+	.swiper-info p {
+		font-size: 18px;
+	}
+	.section {
+    	padding: 60px 0;
+	}
+
+	.header {
+		overflow: hidden;
+	}
+	.burder {
+		display: block;
+	}
+	.header__bottom-nav {
+		position: fixed;
+		top: 0;
+		right: 0;
+		background: #fff;
+		width: 100%;
+		height: 100%;
+		transform: translateX(-100%);
+	}
+
+	.header__bottom-nav.active {
+		transform: translateX(0);
+	}
+
+	.header__bottom-nav ul {
+		flex-direction: column;
+	}
+
+	.why__list {
+		gap: 20px;
+	}
+
+	.why__item-info p:nth-child(1) {
+		font-size: 16px;
+	}
+
+	.why__item-info p:nth-child(1) {
+		font-size: 14px;
+	}
+
+	.why__item {
+		flex-direction: column;
+		max-width: 47%;
+		gap: 20px;
+	}
+
+	.why__item img {
+		width: 70px;
+		height: 70px;
+	}
+
+	.services__item {
+		max-width: 47%;
+	}
+
+	.services__list {
+		gap: 20px;
+	}
+
+	.services__info p:nth-child(1) {
+		font-size: 16px;
+	}
+
+	.services__info p:nth-child(2) {
+		font-size: 14px;
+	}
+	.security__item {
+		max-width: 46%;
+	}
+	.security__list {
+		gap: 20px;
+	}
+
+	.map__info {
+		left: 20px;
+		top: 20px;
+		max-width: 220px;
+		padding: 10px;
+	}
+
+	.map__info-title {
+		font-size: 18px;
+	}
+
+	.map__info-item:not(:last-child) {
+   		margin-bottom: 15px;
+	}
+
+	.map__info-phone a {
+		font-size: 16px;
+	}
+
+	.footer__info img {
+		max-width: 70px;
+	}
+
+	.footer__info-text p:nth-child(1) {
+    	font-size: 40px;
+	}
+
+	.footer__info-text p:nth-child(2) {
+		font-size: 12px;
+	}
+
+
+
+
+
+
+
+}
